@@ -1,0 +1,16 @@
+{
+  "name": "claude-context-injection",
+  "owner": {
+    "name": "Carlo Cori"
+  },
+  "metadata": {
+    "description": "Reversible, per-request context injection for Claude Code (local proxy + recall_context MCP tool)."
+  },
+  "plugins": [
+    {
+      "name": "claude-context-injection",
+      "source": "./",
+      "description": "Reversible, per-request context injection: a local proxy hides old tool results a small classifier judges irrelevant to the current request, and puts them back in place when they become relevant again."
+    }
+  ]
+}
