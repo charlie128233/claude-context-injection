@@ -1,0 +1,35 @@
+{
+  "name": "claude-context-injection",
+  "version": "0.1.0",
+  "description": "Reversible, per-request context injection for Claude Code: a local proxy hides old tool results that a small classifier (Jev or any Jev-compatible endpoint) judges irrelevant to the current request, and puts them back in place when they become relevant again.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node proxy.mjs",
+    "test": "node test/proxy.test.mjs"
+  },
+  "keywords": [
+    "claude-code",
+    "context-management",
+    "context-engineering",
+    "jev",
+    "semif",
+    "llm",
+    "agents",
+    "mcp",
+    "proxy"
+  ],
+  "homepage": "https://github.com/charlie128233/claude-context-injection",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlie128233/claude-context-injection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charlie128233/claude-context-injection/issues"
+  },
+  "author": "Carlo Cori"
+}

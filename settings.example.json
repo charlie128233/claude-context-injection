@@ -1,0 +1,12 @@
+{
+  "port": 8484,
+  "upstream": "https://api.anthropic.com",
+  "classifierUrl": "https://api.typesafe.ai/v1/systemone",
+  "classifierModel": "jev-latest",
+  "classifierKeyEnv": "TYPESAFE_API_KEY",
+  "hideFromTokens": 60000,
+  "hideThreshold": 0.4,
+  "restoreThreshold": 0.6,
+  "minChars": 2000,
+  "neverTouch": ["Task", "Agent", "TodoWrite", "Edit", "MultiEdit", "Write", "NotebookEdit"]
+}
