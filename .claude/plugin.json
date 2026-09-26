@@ -1,0 +1,25 @@
+{
+  "name": "claude-context-injection",
+  "version": "0.1.0",
+  "description": "Reversible, per-request context injection: on every new user request a small classifier (Jev or any Jev-compatible endpoint) decides which old tool results the model sees; hidden ones come back in place when needed (recall_context tool). Requires ANTHROPIC_BASE_URL=http://127.0.0.1:8484 - see README.",
+  "author": {
+    "name": "Carlo Cori"
+  },
+  "homepage": "https://github.com/charlie128233/claude-context-injection",
+  "repository": "https://github.com/charlie128233/claude-context-injection",
+  "license": "MIT",
+  "keywords": [
+    "context-management",
+    "context-injection",
+    "jev",
+    "proxy"
+  ],
+  "mcpServers": {
+    "context-injection": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/recall-mcp.mjs"
+      ]
+    }
+  }
+}
